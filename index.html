@@ -1,45 +1,18 @@
-<!DOCTYPE html>
-<style>
+<html>
 
-body {
-    font-size:100%;
+<script type="text/javascript">
+
+function detectBrowser()
+{
+    var slashIndex = window.location.href.lastIndexOf("/");
+    var cropped = window.location.href.slice(0,slashIndex+1);
+
+    window.location.replace(cropped + "assets/player/KeynoteDHTMLPlayer.html");
 }
 
-h1.content {
-    font-size:2em;
-    margin: auto;
-    font-family:"Arial";
-    padding-bottom: 20px;
-    }
+</script>
 
-p.content {
-    font-size:1em;
-    margin: auto;
-    font-family:"Arial";
-    }
+<body bgcolor="black" onload="detectBrowser()">
+</body>
 
-</style>
-<body>
-
-
-<html>
-        <head>
-            <title>Rotaract Club of Greater Fremont</title>
-        </head>
-
-        <body>
-            <h1 class="content">Rotaract Club of Greater Fremont</h1>
-            <p class = "content">
-                <a href="https://www.meetup.com/BayAreaRotaract/events/calendar/">Calendar of Events</a>
-                    <br />
-                <a href="https://www.facebook.com/groups/rotaractfremont/?ref=bookmarks">Facebook Group</a>
-                    <br />
-                <a href="https://forms.gle/ydXdCaqz1BCyHrFz8">Sign-In Sheet</a>
-                    <br />
-                <a href="https://forms.gle/2mwQsWox5RBG8vbN9">Membership Application</a>
-                    <br />
-                <a href="pages/reimbursement.html">Reimbursement Instructions</a>
-                    <br />
-            </p>
-        </body>
 </html>
